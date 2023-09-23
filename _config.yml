@@ -157,6 +157,7 @@ navbar-img: "/assets/img/bgimage.png"
 
 # Fill in your Google Analytics tag ID (or "Measurement ID") to track your website usage
 gtag: "G-ER2G1H0D9K"
+navertag: "1eb2d7ddf9cec59be6273cfbaa6893a95cdccec8"
 
 # Fill in your Cloudflare Analytics beacon token to track your website using Cloudflare Analytics
 #cloudflare_analytics: ""
