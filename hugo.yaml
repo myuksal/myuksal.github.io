@@ -1,4 +1,4 @@
-baseURL: http://example.org/
+baseURL: https://myuksal.github.io/
 disablePathToLower: true
-languageCode: en-us
+languageCode: ko-kr
 title: 개발자 블로그
