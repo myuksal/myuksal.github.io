@@ -10,6 +10,7 @@ hugo -t PaperMod
 cd public
 # Add changes to git.
 git add .
+git checkout gh-pages
 
 # Commit changes.
 msg="rebuilding site `date`"
