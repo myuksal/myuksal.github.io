@@ -2,4 +2,4 @@
   [caches.images]
     dir = ':cacheDir/images'
 [params.customPartials]  
-  head = ["custom/google/adsense.html"]
+  head = ["adsense.html"]
