@@ -1,0 +1,4 @@
+baseURL: http://example.org/
+disablePathToLower: true
+languageCode: en-us
+title: 개발자 블로그
