@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Abstract on 개발자 블로그</title>
-    <link>http://example.org/tags/abstract/</link>
+    <link>https://myuksal.github.io/tags/abstract/</link>
     <description>Recent content in Abstract on 개발자 블로그</description>
     <generator>Hugo -- 0.150.0</generator>
-    <language>en-us</language>
+    <language>ko-kr</language>
     <lastBuildDate>Mon, 10 Mar 2025 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://example.org/tags/abstract/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://myuksal.github.io/tags/abstract/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>AGW, Abstract Global Wallet 살펴보기.</title>
-      <link>http://example.org/post/2025-03-10-AGW-%EB%B6%84%EC%84%9D/</link>
+      <link>https://myuksal.github.io/post/2025-03-10-AGW-%EB%B6%84%EC%84%9D/</link>
       <pubDate>Mon, 10 Mar 2025 00:00:00 +0000</pubDate>
-      <guid>http://example.org/post/2025-03-10-AGW-%EB%B6%84%EC%84%9D/</guid>
+      <guid>https://myuksal.github.io/post/2025-03-10-AGW-%EB%B6%84%EC%84%9D/</guid>
       <description>&lt;p&gt;Abstract 에 대해 알아보다 쓴 글입니다.
 뭔가 이상한 것 같으면 틀린 내용일겁니다.&lt;/p&gt;
 &lt;h2 id=&#34;agw-가-뭔가&#34;&gt;AGW 가 뭔가?&lt;/h2&gt;
@@ -29,9 +29,9 @@
     </item>
     <item>
       <title>What is the AGW (Abstract Global Wallet)?</title>
-      <link>http://example.org/post/2025-03-10-What-is-abstract/</link>
+      <link>https://myuksal.github.io/post/2025-03-10-What-is-abstract/</link>
       <pubDate>Mon, 10 Mar 2025 00:00:00 +0000</pubDate>
-      <guid>http://example.org/post/2025-03-10-What-is-abstract/</guid>
+      <guid>https://myuksal.github.io/post/2025-03-10-What-is-abstract/</guid>
       <description>&lt;h2 id=&#34;overview-of-agw&#34;&gt;Overview of AGW&lt;/h2&gt;
 &lt;p&gt;AGW is a smart contract-based digital asset management solution. When you create an account on the Abstract Portal, you are assigned a unique AGW address. This technology is developed based on the &lt;a href=&#34;https://github.com/getclave/clave-contracts&#34;&gt;Clave contract&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;To understand the core technology of AGW, you first need to understand the Clave system.&lt;/p&gt;
@@ -40,9 +40,9 @@
     </item>
     <item>
       <title>Abstract 체인 살펴보기</title>
-      <link>http://example.org/post/2024-12-04-Abstract-%EC%B2%B4%EC%9D%B8/</link>
+      <link>https://myuksal.github.io/post/2024-12-04-Abstract-%EC%B2%B4%EC%9D%B8/</link>
       <pubDate>Wed, 04 Dec 2024 00:00:00 +0000</pubDate>
-      <guid>http://example.org/post/2024-12-04-Abstract-%EC%B2%B4%EC%9D%B8/</guid>
+      <guid>https://myuksal.github.io/post/2024-12-04-Abstract-%EC%B2%B4%EC%9D%B8/</guid>
       <description>&lt;p&gt;&lt;em&gt;이 글은 내가 Abstract를 이해하기 위해 문서를 보고 싸지른 글 입니다.&lt;/em&gt;
 &lt;em&gt;헷갈려서 한글로 이름 바꾼게 여럿 있습니다.&lt;/em&gt;&lt;/p&gt;
 &lt;h1 id=&#34;abstract-체인-이해하기&#34;&gt;Abstract 체인 이해하기&lt;/h1&gt;

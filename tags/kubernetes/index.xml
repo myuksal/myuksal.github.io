@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Kubernetes on 개발자 블로그</title>
-    <link>http://example.org/tags/kubernetes/</link>
+    <link>https://myuksal.github.io/tags/kubernetes/</link>
     <description>Recent content in Kubernetes on 개발자 블로그</description>
     <generator>Hugo -- 0.150.0</generator>
-    <language>en-us</language>
+    <language>ko-kr</language>
     <lastBuildDate>Wed, 20 Sep 2023 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://example.org/tags/kubernetes/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://myuksal.github.io/tags/kubernetes/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>홈랩 만들기</title>
-      <link>http://example.org/post/2023-09-20-%ED%99%88%EB%9E%A9-%EB%A7%8C%EB%93%A4%EA%B8%B0/</link>
+      <link>https://myuksal.github.io/post/2023-09-20-%ED%99%88%EB%9E%A9-%EB%A7%8C%EB%93%A4%EA%B8%B0/</link>
       <pubDate>Wed, 20 Sep 2023 00:00:00 +0000</pubDate>
-      <guid>http://example.org/post/2023-09-20-%ED%99%88%EB%9E%A9-%EB%A7%8C%EB%93%A4%EA%B8%B0/</guid>
+      <guid>https://myuksal.github.io/post/2023-09-20-%ED%99%88%EB%9E%A9-%EB%A7%8C%EB%93%A4%EA%B8%B0/</guid>
       <description>&lt;p&gt;나에게 홈랩이 생겼다.&lt;/p&gt;
 &lt;h3 id=&#34;1-홈랩의-필요성&#34;&gt;1. 홈랩의 필요성&lt;/h3&gt;
 &lt;p&gt;대부분의 나같은 개발자들은 오픈소스에 의존도가 매우 높다.

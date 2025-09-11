@@ -2,108 +2,108 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Tags on 개발자 블로그</title>
-    <link>http://example.org/tags/</link>
+    <link>https://myuksal.github.io/tags/</link>
     <description>Recent content in Tags on 개발자 블로그</description>
     <generator>Hugo -- 0.150.0</generator>
-    <language>en-us</language>
+    <language>ko-kr</language>
     <lastBuildDate>Sun, 13 Jul 2025 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://example.org/tags/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://myuksal.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>결제</title>
-      <link>http://example.org/tags/%EA%B2%B0%EC%A0%9C/</link>
+      <link>https://myuksal.github.io/tags/%EA%B2%B0%EC%A0%9C/</link>
       <pubDate>Sun, 13 Jul 2025 00:00:00 +0000</pubDate>
-      <guid>http://example.org/tags/%EA%B2%B0%EC%A0%9C/</guid>
+      <guid>https://myuksal.github.io/tags/%EA%B2%B0%EC%A0%9C/</guid>
       <description></description>
     </item>
     <item>
       <title>시장분석</title>
-      <link>http://example.org/tags/%EC%8B%9C%EC%9E%A5%EB%B6%84%EC%84%9D/</link>
+      <link>https://myuksal.github.io/tags/%EC%8B%9C%EC%9E%A5%EB%B6%84%EC%84%9D/</link>
       <pubDate>Sun, 13 Jul 2025 00:00:00 +0000</pubDate>
-      <guid>http://example.org/tags/%EC%8B%9C%EC%9E%A5%EB%B6%84%EC%84%9D/</guid>
+      <guid>https://myuksal.github.io/tags/%EC%8B%9C%EC%9E%A5%EB%B6%84%EC%84%9D/</guid>
       <description></description>
     </item>
     <item>
       <title>암호화폐</title>
-      <link>http://example.org/tags/%EC%95%94%ED%98%B8%ED%99%94%ED%8F%90/</link>
+      <link>https://myuksal.github.io/tags/%EC%95%94%ED%98%B8%ED%99%94%ED%8F%90/</link>
       <pubDate>Sun, 13 Jul 2025 00:00:00 +0000</pubDate>
-      <guid>http://example.org/tags/%EC%95%94%ED%98%B8%ED%99%94%ED%8F%90/</guid>
+      <guid>https://myuksal.github.io/tags/%EC%95%94%ED%98%B8%ED%99%94%ED%8F%90/</guid>
       <description></description>
     </item>
     <item>
       <title>크립토페이먼트</title>
-      <link>http://example.org/tags/%ED%81%AC%EB%A6%BD%ED%86%A0%ED%8E%98%EC%9D%B4%EB%A8%BC%ED%8A%B8/</link>
+      <link>https://myuksal.github.io/tags/%ED%81%AC%EB%A6%BD%ED%86%A0%ED%8E%98%EC%9D%B4%EB%A8%BC%ED%8A%B8/</link>
       <pubDate>Sun, 13 Jul 2025 00:00:00 +0000</pubDate>
-      <guid>http://example.org/tags/%ED%81%AC%EB%A6%BD%ED%86%A0%ED%8E%98%EC%9D%B4%EB%A8%BC%ED%8A%B8/</guid>
+      <guid>https://myuksal.github.io/tags/%ED%81%AC%EB%A6%BD%ED%86%A0%ED%8E%98%EC%9D%B4%EB%A8%BC%ED%8A%B8/</guid>
       <description></description>
     </item>
     <item>
       <title>Blockchain</title>
-      <link>http://example.org/tags/blockchain/</link>
+      <link>https://myuksal.github.io/tags/blockchain/</link>
       <pubDate>Thu, 29 May 2025 00:00:00 +0000</pubDate>
-      <guid>http://example.org/tags/blockchain/</guid>
+      <guid>https://myuksal.github.io/tags/blockchain/</guid>
       <description></description>
     </item>
     <item>
       <title>Ethereum</title>
-      <link>http://example.org/tags/ethereum/</link>
+      <link>https://myuksal.github.io/tags/ethereum/</link>
       <pubDate>Thu, 29 May 2025 00:00:00 +0000</pubDate>
-      <guid>http://example.org/tags/ethereum/</guid>
+      <guid>https://myuksal.github.io/tags/ethereum/</guid>
       <description></description>
     </item>
     <item>
       <title>Geth</title>
-      <link>http://example.org/tags/geth/</link>
+      <link>https://myuksal.github.io/tags/geth/</link>
       <pubDate>Thu, 29 May 2025 00:00:00 +0000</pubDate>
-      <guid>http://example.org/tags/geth/</guid>
+      <guid>https://myuksal.github.io/tags/geth/</guid>
       <description></description>
     </item>
     <item>
       <title>Pos</title>
-      <link>http://example.org/tags/pos/</link>
+      <link>https://myuksal.github.io/tags/pos/</link>
       <pubDate>Thu, 29 May 2025 00:00:00 +0000</pubDate>
-      <guid>http://example.org/tags/pos/</guid>
+      <guid>https://myuksal.github.io/tags/pos/</guid>
       <description></description>
     </item>
     <item>
       <title>Abstract</title>
-      <link>http://example.org/tags/abstract/</link>
+      <link>https://myuksal.github.io/tags/abstract/</link>
       <pubDate>Mon, 10 Mar 2025 00:00:00 +0000</pubDate>
-      <guid>http://example.org/tags/abstract/</guid>
+      <guid>https://myuksal.github.io/tags/abstract/</guid>
       <description></description>
     </item>
     <item>
       <title>Agw</title>
-      <link>http://example.org/tags/agw/</link>
+      <link>https://myuksal.github.io/tags/agw/</link>
       <pubDate>Mon, 10 Mar 2025 00:00:00 +0000</pubDate>
-      <guid>http://example.org/tags/agw/</guid>
+      <guid>https://myuksal.github.io/tags/agw/</guid>
       <description></description>
     </item>
     <item>
       <title>Zkstack</title>
-      <link>http://example.org/tags/zkstack/</link>
+      <link>https://myuksal.github.io/tags/zkstack/</link>
       <pubDate>Mon, 10 Mar 2025 00:00:00 +0000</pubDate>
-      <guid>http://example.org/tags/zkstack/</guid>
+      <guid>https://myuksal.github.io/tags/zkstack/</guid>
       <description></description>
     </item>
     <item>
       <title>Infra</title>
-      <link>http://example.org/tags/infra/</link>
+      <link>https://myuksal.github.io/tags/infra/</link>
       <pubDate>Wed, 20 Sep 2023 00:00:00 +0000</pubDate>
-      <guid>http://example.org/tags/infra/</guid>
+      <guid>https://myuksal.github.io/tags/infra/</guid>
       <description></description>
     </item>
     <item>
       <title>Kubernetes</title>
-      <link>http://example.org/tags/kubernetes/</link>
+      <link>https://myuksal.github.io/tags/kubernetes/</link>
       <pubDate>Wed, 20 Sep 2023 00:00:00 +0000</pubDate>
-      <guid>http://example.org/tags/kubernetes/</guid>
+      <guid>https://myuksal.github.io/tags/kubernetes/</guid>
       <description></description>
     </item>
     <item>
       <title>회고</title>
-      <link>http://example.org/tags/%ED%9A%8C%EA%B3%A0/</link>
+      <link>https://myuksal.github.io/tags/%ED%9A%8C%EA%B3%A0/</link>
       <pubDate>Wed, 30 Aug 2023 00:00:00 +0000</pubDate>
-      <guid>http://example.org/tags/%ED%9A%8C%EA%B3%A0/</guid>
+      <guid>https://myuksal.github.io/tags/%ED%9A%8C%EA%B3%A0/</guid>
       <description></description>
     </item>
   </channel>
