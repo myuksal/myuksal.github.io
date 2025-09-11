@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="noindex, nofollow">
+<title>AGW, Abstract Global Wallet 살펴보기. | 개발자 블로그</title>
+<meta name="keywords" content="blockchain, zkstack, abstract, agw">
+<meta name="description" content="Abstract 에 대해 알아보다 쓴 글입니다.
+뭔가 이상한 것 같으면 틀린 내용일겁니다.
+AGW 가 뭔가?
+Contract 형태의 지갑이다.
+Abstract portal 에 로그인하면 지갑 주소를 하나 주는데, 그것이 AGW 주소다.
+이것의 전신은 Clave이다.
+Clave 를 포크하여 만든것이 AGW이다.
+AGW 를 이해하기 위해서 일단 Clave 를 알아야한다.
+Clave 살펴보기
+Contract 형태의 지갑이다. Clave 는 모든 사람이 지갑을 쉽게 사용할 수 있도록 하는것이다.
+은행 앱을 생각해보자. 핸드폰이 바뀔 때 마다 여러 인증수단을 통해 &lsquo;나&rsquo;임을 확인해야만 한다.
+인증이 모두 완료된 후에는 긴 기간 &lsquo;나&rsquo;임을 다시 인증하지 않는다.
+회사는 &lsquo;이 기기&rsquo;는 &lsquo;김모씨&rsquo;가 직접 사용하는 핸드폰 이라는 기기인증을 하고 싶은 것 이라고 상상할 수 있다.">
+<meta name="author" content="">
+<link rel="canonical" href="http://localhost:1313/post/2025-03-10-AGW-%EB%B6%84%EC%84%9D/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.2211ca3164be7830024f6aad2b3a2e520843a64f8f048445c3401c1249aa051d.css" integrity="sha256-IhHKMWS&#43;eDACT2qtKzouUghDpk&#43;PBIRFw0AcEkmqBR0=" rel="preload stylesheet" as="style">
+<link rel="icon" href="http://localhost:1313/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
+<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
+<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/post/2025-03-10-AGW-%EB%B6%84%EC%84%9D/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript>
+</head>
+
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="http://localhost:1313/" accesskey="h" title="개발자 블로그 (Alt + H)">개발자 블로그</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    
+    <h1 class="post-title entry-hint-parent">
+      AGW, Abstract Global Wallet 살펴보기.
+    </h1>
+    <div class="post-meta"><span title='2025-03-10 00:00:00 +0000 UTC'>March 10, 2025</span>
+
+</div>
+  </header> 
+  <div class="post-content"><p>Abstract 에 대해 알아보다 쓴 글입니다.
+뭔가 이상한 것 같으면 틀린 내용일겁니다.</p>
+<h2 id="agw-가-뭔가">AGW 가 뭔가?<a hidden class="anchor" aria-hidden="true" href="#agw-가-뭔가">#</a></h2>
+<p>Contract 형태의 지갑이다.
+<a href="https://abs.xyz">Abstract portal</a> 에 로그인하면 지갑 주소를 하나 주는데, 그것이 AGW 주소다.
+이것의 전신은 <a href="https://getclave.io/">Clave</a>이다.
+<a href="https://github.com/getclave/clave-contracts">Clave 를 포크</a>하여 만든것이 AGW이다.</p>
+<p>AGW 를 이해하기 위해서 일단 Clave 를 알아야한다.</p>
+<h2 id="clave-살펴보기">Clave 살펴보기<a hidden class="anchor" aria-hidden="true" href="#clave-살펴보기">#</a></h2>
+<p>Contract 형태의 지갑이다. Clave 는 모든 사람이 지갑을 쉽게 사용할 수 있도록 하는것이다.</p>
+<p>은행 앱을 생각해보자. 핸드폰이 바뀔 때 마다 여러 인증수단을 통해 &lsquo;나&rsquo;임을 확인해야만 한다.
+인증이 모두 완료된 후에는 긴 기간 &lsquo;나&rsquo;임을 다시 인증하지 않는다.
+회사는 &lsquo;이 기기&rsquo;는 &lsquo;김모씨&rsquo;가 직접 사용하는 핸드폰 이라는 기기인증을 하고 싶은 것 이라고 상상할 수 있다.</p>
+<p>이와 비슷한 경험을 제공하기 위해 만들어진것이 Clave 이다.</p>
+<p>요즘의 기기들과 OS는 보안구역이 격리되어 있는 경우가 많다.
+Clave 의 문서에서 소개하는 iOS 의 Secure Enclave는 대충 말하자면 FaceID 로 인증하면 ECC 서명을 사용할 수 있다.
+&lsquo;이 기기&rsquo;를 인증하는것은 손쉽게 해결되었다.</p>
+<p>Web3 는 은행이 따로 없다.
+ECC 로 Signature 를 알 수 있어도 이것을 보관, 검증, 관리해줄 주체가 없는것이다.
+그래서 Contract 를 하나 만들고 그곳에서 Signatrue 를 검증하는 방법을 선택했다.
+Contract 에 서명자를 등록, 삭제 할 수 있는 인터페이스를 만들고, Contract 로부터 트랜잭션을 실행하여 Contract 를 마치 지갑처럼 사용할 수 있도록 하였다.
+이제 Contract를 배포하여 지갑처럼 쓰고, Signature 를 검증하여 트랜잭션을 실행할 수 있게되었다.</p>
+<p>은행은 &lsquo;나&rsquo;임을 확인하면 계좌의 제어권을 준다.
+만약 Contract 지갑을 사용하다가 모든 기기를 분실하면 어떻게 될까?
+전통적인 지갑이라면 그냥 잃는것이다.
+그러나 Clave 는 이것을 해결하기 위해 Recovery Mechanism를 여러개 개발했다.
+대표적인 방법이 Social Recovery 이다. 내가 지정한 사람의 Clave 유저로 하여금 Contract 내 owner 를 변경할 수 있다.</p>
+<p>이로써 Clave 는 어려운 web3 지갑을 은행앱과 비슷한 사용성을 만들어냈다.</p>
+<h2 id="그럼-agw-는-clave-인가">그럼 AGW 는 Clave 인가?<a hidden class="anchor" aria-hidden="true" href="#그럼-agw-는-clave-인가">#</a></h2>
+<h3 id="그냥-clave-쓰면-안됨">그냥 Clave 쓰면 안됨?<a hidden class="anchor" aria-hidden="true" href="#그냥-clave-쓰면-안됨">#</a></h3>
+<p>Clave 는 서비스다. Clave 앱이 따로 있으며, Clave 지갑을 배포하는 Deployer Contract 와 Clave Implement 를 배포해놓아야 사용 가능하다.
+AGW 는 그런걸 원하지 않은것으로 보인다.</p>
+<p>Clave 에서 주로 사용하는 PassKey를 위한 R1 곡선의 인증방식, r1Owner와 r1Validator를 사용하는것이 아니다.
+AGW는 여러 EOA로 하나의 Contract Wallet 을 사용할 수 있도록 만들어진 K1 곡선의 인증방식, k1Owner, k1Validator 를 사용하고있다.
+Abstract 는 Clave의 Contract Wallet 은 똑같이 만들어 사용하되, 사용하는 지향점이 다른것이다.</p>
+<p><em>나도 여기서 의문이 드는데 이 지향점이 뭔지 모르겟다. Privy에서 생성된 EOA를 ClaveWallet에 쓰기 위해서라는데 그냥 EOA 쓰면 안되나 라는 생각이 많이 든다.</em></p>
+<h2 id="privy랑-한세트인-것-같던데">Privy랑 한세트인 것 같던데?<a hidden class="anchor" aria-hidden="true" href="#privy랑-한세트인-것-같던데">#</a></h2>
+<p><strong>아니다.</strong>
+Privy 와 AGW 는 전혀 다른것이다.
+Privy 는 지갑을 서비스 형태로 제공하는 업체이다.
+&lsquo;포쿱&rsquo;이라는 서비스를 만든다고 가정하자.</p>
+<ol>
+<li>Privy 에 &lsquo;ForKup&rsquo; 프로젝트를 생성한다</li>
+<li>웹에 &lsquo;ForKup&rsquo; Privy 로 로그인 하는 인터페이스를 만든다</li>
+<li>유저가 포쿱 서비스에 로그인/가입한다</li>
+<li>Privy의 &lsquo;ForKup&rsquo; 프로젝트에 유저가 생성되며 EOA 가 부여된다</li>
+<li>포쿱 사이트에서 유저는 Privy 를 통해 트랜잭션을 서명한다</li>
+</ol>
+<p>대충 이런 서비스다.
+여기서 주의할점은 A, B, C 서비스가 모두 Privy 프로젝트에서 이메일로 로그인 을 활성화 했다는 가정하에
+<a href="mailto:qwe@naver.com">qwe@naver.com</a> 메일 주인이 A, B, C 모두 가입 했을 때 A, B, C 에 모두 각기 다른 EOA 가 생성된다는것이다.</p>
+<p>즉 내가 Privy 로 로그인을 구현해도, 내 서비스에 로그인 하여 나오는 EOA 와 Abstract Portal 에 로그인하여 나오는 EOA 는 서로 다르다.</p>
+<h2 id="agw-를-내가-만들어도-되나">AGW 를 내가 만들어도 되나?<a hidden class="anchor" aria-hidden="true" href="#agw-를-내가-만들어도-되나">#</a></h2>
+<p><strong>당연히 된다</strong>
+Contract Wallet 은  1 컨트렉트 1 지갑 이다.
+그래서 유저들이 컨트렉트를 배포하여 사용해야한다.</p>
+<p>근데 그건 너무 어렵고 일관된 Contract Wallet 을 만들기 어렵지 않을까?
+그래서 Clave, AGW 는 AccountFactory 가 있다.
+AccountFactory 는 누구나 호출할 수 있다.</p>
+<p><a href="https://abscan.org/address/0x9B947df68D35281C972511B3E7BC875926f26C1A">AGW AccountFactory</a> 의 deployAccount 를 호출할 때 EOA 주소를 keccak256 으로 해싱해서 salt 값으로 넣으면 된다.
+salt 는 create2 의 salt 값이다.
+그럼 Contract Wallet Implement Contract 의 initializer 를 실행하며 새로운 Contrat Wallet 을 배포할 것 이다.
+create2 이므로 배포전에 AGW 의 주소를 미리 계산하는것도 가능하다.</p>
+<p><img alt="deploy-account" loading="lazy" src="/assets/img/2025-03-10-AGW-%EB%B6%84%EC%84%9D/deploy-account.png"></p>
+<h2 id="abstract-portal이-위에-모든것을-합쳐놓은-집합체이다">Abstract Portal이 위에 모든것을 합쳐놓은 집합체이다<a hidden class="anchor" aria-hidden="true" href="#abstract-portal이-위에-모든것을-합쳐놓은-집합체이다">#</a></h2>
+<p>Abstract Privy 로 로그인 하면 EOA 가 자동적으로 생기고, Abstract 에서 AGW 를 만들어준다.
+<img alt="abstract-portal-login" loading="lazy" src="/assets/img/2025-03-10-AGW-%EB%B6%84%EC%84%9D/abstract-portal-login.png"></p>
+<p>Discover 에 가면 여러 앱들을 볼 수 있다.
+이게 Abstract가 밀고있는 것 인데, 여러 앱들의 마켓플레이스가 되는것이 Abstract Portal 의 역할이다.
+<img alt="discover-apps" loading="lazy" src="/assets/img/2025-03-10-AGW-%EB%B6%84%EC%84%9D/discover-apps.png"></p>
+<p>아무 앱이나 들어가 로그인을 눌러보면 <code>Log in to Abstract</code>가 뜬다.
+이건 Abstarct Portal 에서 사용하는 유저의 계정으로 앱 의 Privy 로그인에 연결하는 과정이다.
+앱 Privy 유저 &lt;-&gt; Abstract Privy 유저 의 연결이다.
+<em>앱에 로그인 한 적 없는데 뭘 연결하냐고? 이건 또 새로운 국면인데, 가입과 동시에 연결하는 형태이다.</em>
+<img alt="login-with-abstract" loading="lazy" src="/assets/img/2025-03-10-AGW-%EB%B6%84%EC%84%9D/login-with-abstract.png"></p>
+<p>유저가 앱에서 어떤 활동을 하면 Abstract Portal 즉 유저의 AGW 에 XP와 뱃지를 부여한다.
+<em>이건 뭐 해볼라면 돈내라고 하길래 나도 안해봣다.</em>
+<img alt="xp" loading="lazy" src="/assets/img/2025-03-10-AGW-%EB%B6%84%EC%84%9D/xp.png"></p>
+<h2 id="in-a-nutshell">In a nutshell<a hidden class="anchor" aria-hidden="true" href="#in-a-nutshell">#</a></h2>
+<ul>
+<li>AGW 는 Contarct로 만든 지갑이다</li>
+<li>여러 EOA 를 붙여 서명할 수 있다. (다른 EOA 로 1개의 지갑 컨트롤)</li>
+<li>AGW 의 전신은 Clave 이다</li>
+<li>Privy 와는 분리하여 생각하여야 한다</li>
+<li>Privy에 로그인 하면 나오는 EOA 로 Clave 를 사용하기 위해 Clave 를 포크하여 AGW 를 만들고 커스터마이징 했다</li>
+<li>AGW 는 내가 아무 EOA 나 사용하여 만들 수 있다</li>
+<li>Abstract Portal은 생태계를 조성하는 역할을 하며 Privy 와 AGW 를 필요로 한다</li>
+<li>Abstract Portal에 등록된 앱들은 앱 내의 활동으로 유저의 Abstract Portal 내 AGW 에 XP와 뱃지를 받을 수 있다</li>
+</ul>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+      <li><a href="http://localhost:1313/tags/blockchain/">Blockchain</a></li>
+      <li><a href="http://localhost:1313/tags/zkstack/">Zkstack</a></li>
+      <li><a href="http://localhost:1313/tags/abstract/">Abstract</a></li>
+      <li><a href="http://localhost:1313/tags/agw/">Agw</a></li>
+    </ul>
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2025 <a href="http://localhost:1313/">개발자 블로그</a></span> · 
+
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+</body>
+
+</html>

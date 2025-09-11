@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Ethereum on 개발자 블로그</title>
+    <link>http://localhost:1313/tags/ethereum/</link>
+    <description>Recent content in Ethereum on 개발자 블로그</description>
+    <generator>Hugo -- 0.150.0</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 29 May 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/ethereum/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>이더리움 POS는 Geth 에서 어떻게 동작할까?</title>
+      <link>http://localhost:1313/post/2025-05-29-%EC%9D%B4%EB%8D%94%EB%A6%AC%EC%9B%80-POS/</link>
+      <pubDate>Thu, 29 May 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/post/2025-05-29-%EC%9D%B4%EB%8D%94%EB%A6%AC%EC%9B%80-POS/</guid>
+      <description>&lt;h1 id=&#34;geth의-이더리움-pos-합의-알고리즘&#34;&gt;Geth의 이더리움 PoS 합의 알고리즘&lt;/h1&gt;
+&lt;h2 id=&#34;목차&#34;&gt;목차&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;이더리움 PoS 합의 알고리즘 개요&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;포크 선택 규칙 처리&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;체인 재구성 (Reorg) 처리&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;에포크 및 슬롯 관리&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;RANDAO 관련 로직&lt;/strong&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;1-이더리움-pos-합의-알고리즘-개요&#34;&gt;1. 이더리움 PoS 합의 알고리즘 개요&lt;/h2&gt;
+&lt;p&gt;이더리움은 &lt;strong&gt;Beacon 체인&lt;/strong&gt; 기반의 &lt;strong&gt;지분증명(Proof of Stake, PoS)&lt;/strong&gt; 합의 알고리즘을 사용함.&lt;/p&gt;
+&lt;p&gt;합의 프로토콜에는 **에포크(epoch)**와 &lt;strong&gt;슬롯(slot)&lt;/strong&gt; 개념이 있음.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;1개 에포크는 32개 슬롯&lt;/strong&gt; (약 6.4분)으로 구성되고 &lt;strong&gt;1개 슬롯은 12초&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;각 슬롯마다 네트워크의 검증인(validator) 중 한 명이 &lt;strong&gt;블록 제안자&lt;/strong&gt;로 무작위 선택되어 블록을 제안하고, 나머지 검증인들은 해당 슬롯의 블록에 대한 **승인 투표(attestation)**를 함.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

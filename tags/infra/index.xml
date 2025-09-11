@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Infra on 개발자 블로그</title>
+    <link>http://localhost:1313/tags/infra/</link>
+    <description>Recent content in Infra on 개발자 블로그</description>
+    <generator>Hugo -- 0.150.0</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 20 Sep 2023 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/infra/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>홈랩 만들기</title>
+      <link>http://localhost:1313/post/2023-09-20-%ED%99%88%EB%9E%A9-%EB%A7%8C%EB%93%A4%EA%B8%B0/</link>
+      <pubDate>Wed, 20 Sep 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/post/2023-09-20-%ED%99%88%EB%9E%A9-%EB%A7%8C%EB%93%A4%EA%B8%B0/</guid>
+      <description>&lt;p&gt;나에게 홈랩이 생겼다.&lt;/p&gt;
+&lt;h3 id=&#34;1-홈랩의-필요성&#34;&gt;1. 홈랩의 필요성&lt;/h3&gt;
+&lt;p&gt;대부분의 나같은 개발자들은 오픈소스에 의존도가 매우 높다.
+개인의 생산성을 오픈소스를 사용하지 않는 사람에 비해 압도적으로 높여준다.
+mysql이나 postgresql을 사용해야하는 일이 생긴다면 우리는 그냥 설치하고 계정만 설정해도 동작에 문제가 없다.
+심지어 파일을 쓰고 압축하고 색인을 생성하는 번거로운일을 SQL로 모두 해결할 수 있다.&lt;/p&gt;
+&lt;p&gt;하지만 수없이 많이 추상화된 오픈소스는 간혹 사용자를 어렵게한다.
+만약 회사에서 쿠버네티스 클러스터를 사용중이라고 가정해보자.
+어느날 나에게 &amp;lsquo;네트워크 관측 가능성&amp;rsquo;을 근거로 cni를 calico에서 cilium으로 변경해야하는 미션이 생겼다고 생각해보자.
+뭘 해야할지 아는사람은 경험자뿐일것이다.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

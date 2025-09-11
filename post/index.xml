@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Posts on 개발자 블로그</title>
+    <link>http://localhost:1313/post/</link>
+    <description>Recent content in Posts on 개발자 블로그</description>
+    <generator>Hugo -- 0.150.0</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 13 Jul 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>대충하는 크립토 페이먼트 시장 분석</title>
+      <link>http://localhost:1313/post/2025-07-13-%ED%81%AC%EB%A6%BD%ED%86%A0-%ED%8E%98%EC%9D%B4%EB%A8%BC%ED%8A%B8-%EC%8B%9C%EC%9E%A5-%EB%B6%84%EC%84%9D/</link>
+      <pubDate>Sun, 13 Jul 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/post/2025-07-13-%ED%81%AC%EB%A6%BD%ED%86%A0-%ED%8E%98%EC%9D%B4%EB%A8%BC%ED%8A%B8-%EC%8B%9C%EC%9E%A5-%EB%B6%84%EC%84%9D/</guid>
+      <description>&lt;h1 id=&#34;1-시장&#34;&gt;1. 시장&lt;/h1&gt;
+&lt;h2 id=&#34;11-시장-규모&#34;&gt;1.1 시장 규모&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;2024년 글로벌 암호화폐 결제 거래액: 45억 달러(약 5조 6천억 원)&lt;/li&gt;
+&lt;li&gt;B2C e커머스 40%, 리테일/F&amp;amp;B 30%, 여행/숙박 15%, 기타 15%&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;12-성장-전망&#34;&gt;1.2 성장 전망&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;연평균 성장률(CAGR) 18% 이상, 2028년 약 15조 원 시장 예상&lt;/li&gt;
+&lt;li&gt;아시아/태평양 지역 수요 25% 빠르게 증가&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;13-주요-동인&#34;&gt;1.3 주요 동인&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;결제 비용: 기존 카드망 2.5%→크립토 1% 이하&lt;/li&gt;
+&lt;li&gt;속도 개선: 온체인 10분→라이트닝/L2 1초 이내&lt;/li&gt;
+&lt;li&gt;모바일 월렛 활성화: 월간 사용자 5억 명 돌파&lt;/li&gt;
+&lt;li&gt;소비자/상인 채택 현황: 소비자 27%가 암호화폐 결제 경험, 상인 12%가 코인 결제 도입&lt;/li&gt;
+&lt;li&gt;조사 방법론: 글로벌 리포트와 자체 설문 분석, 온체인 데이터 및 라이트닝 노드 통계 활용&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;2-기술-인프라-심층-분석&#34;&gt;2. 기술 인프라 심층 분석&lt;/h1&gt;
+&lt;h2 id=&#34;21-온체인-결제-흐름&#34;&gt;2.1 온체인 결제 흐름&lt;/h2&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;1. 지갑 생성 및 자산 예치
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;2. 거래 서명 후 P2P 전송
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;3. 블록 확정(10분 내외)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;4. 서버 검증
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;22-라이트닝-네트워크&#34;&gt;2.2 라이트닝 네트워크&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;TPS 2,000~10,000, 수수료 0.01% 이하&lt;/li&gt;
+&lt;li&gt;오프체인 채널 기반 즉시 정산, 복수 경로 자동 탐색&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;23-레이어2-롤업&#34;&gt;2.3 레이어2 롤업&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;ZK-rollup: TPS 9,000, 평균 수수료 0.5%&lt;/li&gt;
+&lt;li&gt;Optimistic-rollup: TPS 3,000, 이체 기간 1~2분&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;24-스테이블코인-레일&#34;&gt;2.4 스테이블코인 레일&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;USDC/USDT rails: 온체인 전송 즉시 정산, 기관/소매용 계약형 가격 안정성 제공&lt;/li&gt;
+&lt;li&gt;IMF/BIS 보고서에 따르면 스테이블코인 결제 비중 15% 달성&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;25-온오프-램프onoff-ramp&#34;&gt;2.5 온/오프 램프(On/Off-Ramp)&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Fiat ↔ Crypto: MoonPay, Wyre, Simplex 등 50여 서비스 활용&lt;/li&gt;
+&lt;li&gt;평균 온램프 수수료 1.5%, 오프램프 0.75%&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;3-주요-게이트웨이-및-서비스&#34;&gt;3. 주요 게이트웨이 및 서비스&lt;/h1&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;게이트웨이&lt;/th&gt;
+          &lt;th&gt;수수료&lt;/th&gt;
+          &lt;th&gt;지원 자산&lt;/th&gt;
+          &lt;th&gt;특징&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Coinbase Commerce&lt;/td&gt;
+          &lt;td&gt;1%&lt;/td&gt;
+          &lt;td&gt;BTC,ETH,USDC 등 100+&lt;/td&gt;
+          &lt;td&gt;SOC2/KYC 인증, UI/UX 우수&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;BitPay&lt;/td&gt;
+          &lt;td&gt;1~2%+0.25$&lt;/td&gt;
+          &lt;td&gt;BTC,BCH,ETH,LTC,DOGE&lt;/td&gt;
+          &lt;td&gt;멀티시그/HSM 도입, 기업용 리포팅 탑재&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Binance Pay&lt;/td&gt;
+          &lt;td&gt;0%~1USDT&lt;/td&gt;
+          &lt;td&gt;BTC,ETH,BNB,USDT 등 300+&lt;/td&gt;
+          &lt;td&gt;거래소 연동, AI 사기 방지 시스템 운영&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;NOWPayments&lt;/td&gt;
+          &lt;td&gt;0.5%&lt;/td&gt;
+          &lt;td&gt;BTC,ERC-20,BEP-20 등 150+&lt;/td&gt;
+          &lt;td&gt;API 간편, 비즈니스 맞춤형 커스터마이징 지원&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h1 id=&#34;4-사례-분석&#34;&gt;4. 사례 분석&lt;/h1&gt;
+&lt;h2 id=&#34;41-e커머스-심층-사례&#34;&gt;4.1 e커머스 심층 사례&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Shopify&lt;/strong&gt;: USDC 스트리밍 결제, 환전비용 0.5% 절감&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Magento&lt;/strong&gt;: Lightning 마이크로결제 플러그인 도입&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;42-리테일fb&#34;&gt;4.2 리테일/F&amp;amp;B&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Starbucks&lt;/strong&gt;: Bakkt 지갑 연동, 월 50만 건 처리, 평균 결제액 $4&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Newegg&lt;/strong&gt;: BitPay 도입, 환불율 0.3% 유지, 월 매출 200만 달러&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;43-여행숙박&#34;&gt;4.3 여행/숙박&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Travala.com&lt;/strong&gt;: 1천여 호텔 즉시 예약, 결제 수수료 0.8%&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;CheapAir&lt;/strong&gt;: 항공권 결제, 거래액 500만 달러&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;44-엔터게임&#34;&gt;4.4 엔터/게임&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Epic Games&lt;/strong&gt;: NFT 기반 인게임 결제 시스템 구현&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Ubisoft&lt;/strong&gt;: 지갑 연동 이벤트, 사용자 증가 15%&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;45-한국동남아-현장-사례&#34;&gt;4.5 한국/동남아 현장 사례&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;한국: Upbit-Naver Pay, B2BinPay를 통한 원화 스테이블코인 결제 실험&lt;/li&gt;
+&lt;li&gt;동남아: GCash, GrabPay에서 USDT 레일 결제 파일럿, 거래량 10% 성장&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;5-규제-환경-및-기업-대응&#34;&gt;5. 규제 환경 및 기업 대응&lt;/h1&gt;
+&lt;h2 id=&#34;51-미국&#34;&gt;5.1 미국&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;FATF Travel Rule: VASP 등록/보고, KYC/AML 의무화&lt;/li&gt;
+&lt;li&gt;SEC/CFTC 권한 분쟁, 증권성 여부 불확실성 상존&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;52-유럽&#34;&gt;5.2 유럽&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;MiCA(2024): CASP 허가/보고 의무, 스테이블코인 발행 규제&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;53-한국&#34;&gt;5.3 한국&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;2021년 신고제: ISMS 지침, 실명계좌 필수&lt;/li&gt;
+&lt;li&gt;P2P 과세 기준 논의 중&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;54-아시아-규제-동향&#34;&gt;5.4 아시아 규제 동향&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;한국 Travel Rule(2024): 100만 원 이상 P2P 송금 시 정보 전송 의무화&lt;/li&gt;
+&lt;li&gt;싱가포르 MAS 가이드라인: 디지털 결제 토큰 서비스 사업자 인가 필요&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;55-기업-대응&#34;&gt;5.5 기업 대응&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;VASP 라이선스 취득 비용: 약 50만 USD&lt;/li&gt;
+&lt;li&gt;내부 통제: Travel Rule 솔루션 통합, 자동화 레포팅&lt;/li&gt;
+&lt;li&gt;법률 리스크: 글로벌 준수 가이드 제작&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;6-신흥-트렌드--향후-과제&#34;&gt;6. 신흥 트렌드 &amp;amp; 향후 과제&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;IoT 결제: 스마트 냉장고/차량이 자동으로 결제 수행하는 실험 단계 (스마트TV, 홈 어시스턴트 연동)&lt;/li&gt;
+&lt;li&gt;NFC/탭투페이: NFC 칩 내장 월렛으로 오프라인 매장 결제 지원 사례 증가&lt;/li&gt;
+&lt;li&gt;음성 결제(Voice Commerce): Alexa/Google Assistant에 지갑 연동, 음성 명령으로 결제&lt;/li&gt;
+&lt;li&gt;VAPP(In-App Crypto Payments): 앱 내 코인 결제 SDK 도입, 모바일 게임/컨텐츠 과금 확대&lt;/li&gt;
+&lt;li&gt;결제 오케스트레이션: Primer, Spreedly 같은 멀티-레일 통합 플랫폼 활용해 라우팅/스위칭 자동화&lt;/li&gt;
+&lt;li&gt;CBDC/스테이블코인 협업: 중앙은행 디지털화폐와 USDC/USDT 연동 모델 구축&lt;/li&gt;
+&lt;li&gt;Build vs Buy: 자체 노드 인프라/데이터 파이프라인 구축 비용 vs Crypto APIs 같은 외부 솔루션 도입 비교&lt;/li&gt;
+&lt;li&gt;개발자 경험(DevX): 플러그인/API 문서화, 샘플 코드를 통한 빠른 통합&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;마무리&#34;&gt;마무리&lt;/h1&gt;
+&lt;p&gt;크립토 페이먼트는 결제 비용 절감, 속도 개선, 새로운 비즈니스 모델 창출 가능성 열려있음. (노다지일지도)
+향후 글로벌 표준화, CBDC/스테이블코인 연계, API 오픈소스화, 사용자 교육을 노려볼 필요있음.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>이더리움 POS는 Geth 에서 어떻게 동작할까?</title>
+      <link>http://localhost:1313/post/2025-05-29-%EC%9D%B4%EB%8D%94%EB%A6%AC%EC%9B%80-POS/</link>
+      <pubDate>Thu, 29 May 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/post/2025-05-29-%EC%9D%B4%EB%8D%94%EB%A6%AC%EC%9B%80-POS/</guid>
+      <description>&lt;h1 id=&#34;geth의-이더리움-pos-합의-알고리즘&#34;&gt;Geth의 이더리움 PoS 합의 알고리즘&lt;/h1&gt;
+&lt;h2 id=&#34;목차&#34;&gt;목차&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;이더리움 PoS 합의 알고리즘 개요&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;포크 선택 규칙 처리&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;체인 재구성 (Reorg) 처리&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;에포크 및 슬롯 관리&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;RANDAO 관련 로직&lt;/strong&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;1-이더리움-pos-합의-알고리즘-개요&#34;&gt;1. 이더리움 PoS 합의 알고리즘 개요&lt;/h2&gt;
+&lt;p&gt;이더리움은 &lt;strong&gt;Beacon 체인&lt;/strong&gt; 기반의 &lt;strong&gt;지분증명(Proof of Stake, PoS)&lt;/strong&gt; 합의 알고리즘을 사용함.&lt;/p&gt;
+&lt;p&gt;합의 프로토콜에는 **에포크(epoch)**와 &lt;strong&gt;슬롯(slot)&lt;/strong&gt; 개념이 있음.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;1개 에포크는 32개 슬롯&lt;/strong&gt; (약 6.4분)으로 구성되고 &lt;strong&gt;1개 슬롯은 12초&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;각 슬롯마다 네트워크의 검증인(validator) 중 한 명이 &lt;strong&gt;블록 제안자&lt;/strong&gt;로 무작위 선택되어 블록을 제안하고, 나머지 검증인들은 해당 슬롯의 블록에 대한 **승인 투표(attestation)**를 함.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>AGW, Abstract Global Wallet 살펴보기.</title>
+      <link>http://localhost:1313/post/2025-03-10-AGW-%EB%B6%84%EC%84%9D/</link>
+      <pubDate>Mon, 10 Mar 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/post/2025-03-10-AGW-%EB%B6%84%EC%84%9D/</guid>
+      <description>&lt;p&gt;Abstract 에 대해 알아보다 쓴 글입니다.
+뭔가 이상한 것 같으면 틀린 내용일겁니다.&lt;/p&gt;
+&lt;h2 id=&#34;agw-가-뭔가&#34;&gt;AGW 가 뭔가?&lt;/h2&gt;
+&lt;p&gt;Contract 형태의 지갑이다.
+&lt;a href=&#34;https://abs.xyz&#34;&gt;Abstract portal&lt;/a&gt; 에 로그인하면 지갑 주소를 하나 주는데, 그것이 AGW 주소다.
+이것의 전신은 &lt;a href=&#34;https://getclave.io/&#34;&gt;Clave&lt;/a&gt;이다.
+&lt;a href=&#34;https://github.com/getclave/clave-contracts&#34;&gt;Clave 를 포크&lt;/a&gt;하여 만든것이 AGW이다.&lt;/p&gt;
+&lt;p&gt;AGW 를 이해하기 위해서 일단 Clave 를 알아야한다.&lt;/p&gt;
+&lt;h2 id=&#34;clave-살펴보기&#34;&gt;Clave 살펴보기&lt;/h2&gt;
+&lt;p&gt;Contract 형태의 지갑이다. Clave 는 모든 사람이 지갑을 쉽게 사용할 수 있도록 하는것이다.&lt;/p&gt;
+&lt;p&gt;은행 앱을 생각해보자. 핸드폰이 바뀔 때 마다 여러 인증수단을 통해 &amp;lsquo;나&amp;rsquo;임을 확인해야만 한다.
+인증이 모두 완료된 후에는 긴 기간 &amp;lsquo;나&amp;rsquo;임을 다시 인증하지 않는다.
+회사는 &amp;lsquo;이 기기&amp;rsquo;는 &amp;lsquo;김모씨&amp;rsquo;가 직접 사용하는 핸드폰 이라는 기기인증을 하고 싶은 것 이라고 상상할 수 있다.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>What is the AGW (Abstract Global Wallet)?</title>
+      <link>http://localhost:1313/post/2025-03-10-What-is-abstract/</link>
+      <pubDate>Mon, 10 Mar 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/post/2025-03-10-What-is-abstract/</guid>
+      <description>&lt;h2 id=&#34;overview-of-agw&#34;&gt;Overview of AGW&lt;/h2&gt;
+&lt;p&gt;AGW is a smart contract-based digital asset management solution. When you create an account on the Abstract Portal, you are assigned a unique AGW address. This technology is developed based on the &lt;a href=&#34;https://github.com/getclave/clave-contracts&#34;&gt;Clave contract&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;To understand the core technology of AGW, you first need to understand the Clave system.&lt;/p&gt;
+&lt;h2 id=&#34;analysis-of-the-clave-system&#34;&gt;Analysis of the Clave System&lt;/h2&gt;
+&lt;p&gt;Clave is a smart contract-based digital asset management platform that offers a user-friendly interface.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Abstract 체인 살펴보기</title>
+      <link>http://localhost:1313/post/2024-12-04-Abstract-%EC%B2%B4%EC%9D%B8/</link>
+      <pubDate>Wed, 04 Dec 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/post/2024-12-04-Abstract-%EC%B2%B4%EC%9D%B8/</guid>
+      <description>&lt;p&gt;&lt;em&gt;이 글은 내가 Abstract를 이해하기 위해 문서를 보고 싸지른 글 입니다.&lt;/em&gt;
+&lt;em&gt;헷갈려서 한글로 이름 바꾼게 여럿 있습니다.&lt;/em&gt;&lt;/p&gt;
+&lt;h1 id=&#34;abstract-체인-이해하기&#34;&gt;Abstract 체인 이해하기&lt;/h1&gt;
+&lt;h3 id=&#34;l2-체인-abstract-zk-rollup을-활용한-확장성-솔루션&#34;&gt;L2 체인 Abstract: ZK Rollup을 활용한 확장성 솔루션&lt;/h3&gt;
+&lt;p&gt;Abstract는 이더리움의 보안성을 기반으로 작동하는 Layer 2(L2) 체인입니다.
+이 L2 체인에서는 발생한 트랜잭션을 큰 묶음(배치)으로 모아 이더리움 메인넷에 기록합니다.&lt;/p&gt;
+&lt;p&gt;이 체인은 ZK Stack이라는 프레임워크를 통해 구축된 ZK Rollup 체인을 사용합니다. ZK Rollup은 영지식 증명(Zero-Knowledge Proof) 기술을 활용하여, 이더리움의 보안을 유지하면서도 거래 처리량을 크게 증가시키는 확장성 솔루션을 제공합니다.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>홈랩 만들기</title>
+      <link>http://localhost:1313/post/2023-09-20-%ED%99%88%EB%9E%A9-%EB%A7%8C%EB%93%A4%EA%B8%B0/</link>
+      <pubDate>Wed, 20 Sep 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/post/2023-09-20-%ED%99%88%EB%9E%A9-%EB%A7%8C%EB%93%A4%EA%B8%B0/</guid>
+      <description>&lt;p&gt;나에게 홈랩이 생겼다.&lt;/p&gt;
+&lt;h3 id=&#34;1-홈랩의-필요성&#34;&gt;1. 홈랩의 필요성&lt;/h3&gt;
+&lt;p&gt;대부분의 나같은 개발자들은 오픈소스에 의존도가 매우 높다.
+개인의 생산성을 오픈소스를 사용하지 않는 사람에 비해 압도적으로 높여준다.
+mysql이나 postgresql을 사용해야하는 일이 생긴다면 우리는 그냥 설치하고 계정만 설정해도 동작에 문제가 없다.
+심지어 파일을 쓰고 압축하고 색인을 생성하는 번거로운일을 SQL로 모두 해결할 수 있다.&lt;/p&gt;
+&lt;p&gt;하지만 수없이 많이 추상화된 오픈소스는 간혹 사용자를 어렵게한다.
+만약 회사에서 쿠버네티스 클러스터를 사용중이라고 가정해보자.
+어느날 나에게 &amp;lsquo;네트워크 관측 가능성&amp;rsquo;을 근거로 cni를 calico에서 cilium으로 변경해야하는 미션이 생겼다고 생각해보자.
+뭘 해야할지 아는사람은 경험자뿐일것이다.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>첫 4년 정리</title>
+      <link>http://localhost:1313/post/2023-08-30-%EC%B2%AB4%EB%85%84-%EC%A0%95%EB%A6%AC/</link>
+      <pubDate>Wed, 30 Aug 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/post/2023-08-30-%EC%B2%AB4%EB%85%84-%EC%A0%95%EB%A6%AC/</guid>
+      <description>&lt;p&gt;이 글은 지난 4년간 시선을 오름차순으로 정리한 글이다.&lt;/p&gt;
+&lt;h3 id=&#34;1-사회생활-시작&#34;&gt;1. 사회생활 시작&lt;/h3&gt;
+&lt;p&gt;2019년 9월 고등학생 신분의 나는 알 수 없는 자신감 반으로 첫 출근을 했다.
+무엇이든 시켜만 주십시오 마인드로 무장한 나는 말걸지마십쇼로 바뀌기까지 3개월이면 충분했다.&lt;/p&gt;
+&lt;p&gt;그도 그럴 것이 회사에는 제대로 돌아가는 게 하나도 없어 보였다.
+하루종일 서버가 꺼졌다 켜지기를 반복했고, 고딩 깍뚜기 온보딩용 토이프로젝트가 잘나왔다며
+서비스하는 모습까지 내가 기대하던 회사의 모습과는 정반대였다.&lt;/p&gt;
+&lt;h3 id=&#34;2-난가&#34;&gt;2. 난가?&lt;/h3&gt;
+&lt;p&gt;한참 시키는 일만 처리하고 살다가 갑자기 깨달은 사실이 있다.
+내가 다니는 회사가 나의 수준이라는 사실을 말이다.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

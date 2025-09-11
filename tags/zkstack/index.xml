@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Zkstack on 개발자 블로그</title>
+    <link>http://localhost:1313/tags/zkstack/</link>
+    <description>Recent content in Zkstack on 개발자 블로그</description>
+    <generator>Hugo -- 0.150.0</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 10 Mar 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/zkstack/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>AGW, Abstract Global Wallet 살펴보기.</title>
+      <link>http://localhost:1313/post/2025-03-10-AGW-%EB%B6%84%EC%84%9D/</link>
+      <pubDate>Mon, 10 Mar 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/post/2025-03-10-AGW-%EB%B6%84%EC%84%9D/</guid>
+      <description>&lt;p&gt;Abstract 에 대해 알아보다 쓴 글입니다.
+뭔가 이상한 것 같으면 틀린 내용일겁니다.&lt;/p&gt;
+&lt;h2 id=&#34;agw-가-뭔가&#34;&gt;AGW 가 뭔가?&lt;/h2&gt;
+&lt;p&gt;Contract 형태의 지갑이다.
+&lt;a href=&#34;https://abs.xyz&#34;&gt;Abstract portal&lt;/a&gt; 에 로그인하면 지갑 주소를 하나 주는데, 그것이 AGW 주소다.
+이것의 전신은 &lt;a href=&#34;https://getclave.io/&#34;&gt;Clave&lt;/a&gt;이다.
+&lt;a href=&#34;https://github.com/getclave/clave-contracts&#34;&gt;Clave 를 포크&lt;/a&gt;하여 만든것이 AGW이다.&lt;/p&gt;
+&lt;p&gt;AGW 를 이해하기 위해서 일단 Clave 를 알아야한다.&lt;/p&gt;
+&lt;h2 id=&#34;clave-살펴보기&#34;&gt;Clave 살펴보기&lt;/h2&gt;
+&lt;p&gt;Contract 형태의 지갑이다. Clave 는 모든 사람이 지갑을 쉽게 사용할 수 있도록 하는것이다.&lt;/p&gt;
+&lt;p&gt;은행 앱을 생각해보자. 핸드폰이 바뀔 때 마다 여러 인증수단을 통해 &amp;lsquo;나&amp;rsquo;임을 확인해야만 한다.
+인증이 모두 완료된 후에는 긴 기간 &amp;lsquo;나&amp;rsquo;임을 다시 인증하지 않는다.
+회사는 &amp;lsquo;이 기기&amp;rsquo;는 &amp;lsquo;김모씨&amp;rsquo;가 직접 사용하는 핸드폰 이라는 기기인증을 하고 싶은 것 이라고 상상할 수 있다.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>What is the AGW (Abstract Global Wallet)?</title>
+      <link>http://localhost:1313/post/2025-03-10-What-is-abstract/</link>
+      <pubDate>Mon, 10 Mar 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/post/2025-03-10-What-is-abstract/</guid>
+      <description>&lt;h2 id=&#34;overview-of-agw&#34;&gt;Overview of AGW&lt;/h2&gt;
+&lt;p&gt;AGW is a smart contract-based digital asset management solution. When you create an account on the Abstract Portal, you are assigned a unique AGW address. This technology is developed based on the &lt;a href=&#34;https://github.com/getclave/clave-contracts&#34;&gt;Clave contract&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;To understand the core technology of AGW, you first need to understand the Clave system.&lt;/p&gt;
+&lt;h2 id=&#34;analysis-of-the-clave-system&#34;&gt;Analysis of the Clave System&lt;/h2&gt;
+&lt;p&gt;Clave is a smart contract-based digital asset management platform that offers a user-friendly interface.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Abstract 체인 살펴보기</title>
+      <link>http://localhost:1313/post/2024-12-04-Abstract-%EC%B2%B4%EC%9D%B8/</link>
+      <pubDate>Wed, 04 Dec 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/post/2024-12-04-Abstract-%EC%B2%B4%EC%9D%B8/</guid>
+      <description>&lt;p&gt;&lt;em&gt;이 글은 내가 Abstract를 이해하기 위해 문서를 보고 싸지른 글 입니다.&lt;/em&gt;
+&lt;em&gt;헷갈려서 한글로 이름 바꾼게 여럿 있습니다.&lt;/em&gt;&lt;/p&gt;
+&lt;h1 id=&#34;abstract-체인-이해하기&#34;&gt;Abstract 체인 이해하기&lt;/h1&gt;
+&lt;h3 id=&#34;l2-체인-abstract-zk-rollup을-활용한-확장성-솔루션&#34;&gt;L2 체인 Abstract: ZK Rollup을 활용한 확장성 솔루션&lt;/h3&gt;
+&lt;p&gt;Abstract는 이더리움의 보안성을 기반으로 작동하는 Layer 2(L2) 체인입니다.
+이 L2 체인에서는 발생한 트랜잭션을 큰 묶음(배치)으로 모아 이더리움 메인넷에 기록합니다.&lt;/p&gt;
+&lt;p&gt;이 체인은 ZK Stack이라는 프레임워크를 통해 구축된 ZK Rollup 체인을 사용합니다. ZK Rollup은 영지식 증명(Zero-Knowledge Proof) 기술을 활용하여, 이더리움의 보안을 유지하면서도 거래 처리량을 크게 증가시키는 확장성 솔루션을 제공합니다.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
