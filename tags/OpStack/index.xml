@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>OpStack on 개발자 블로그</title>
+    <link>https://myuksal.github.io/tags/OpStack/</link>
+    <description>Recent content in OpStack on 개발자 블로그</description>
+    <generator>Hugo -- 0.150.0</generator>
+    <language>ko-kr</language>
+    <lastBuildDate>Wed, 17 Sep 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://myuksal.github.io/tags/OpStack/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>OP Stack에 대해 알아보기</title>
+      <link>https://myuksal.github.io/post/2025-09-17-OP-Stack/</link>
+      <pubDate>Wed, 17 Sep 2025 00:00:00 +0000</pubDate>
+      <guid>https://myuksal.github.io/post/2025-09-17-OP-Stack/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;목차&lt;/strong&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;OP Stack 개요&lt;/li&gt;
+&lt;li&gt;OP Stack 구성 요소&lt;/li&gt;
+&lt;li&gt;Governance&lt;/li&gt;
+&lt;li&gt;슈퍼체인에 체인을 만드는것과 그냥 체인을 만드는것의 차이&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;1-op-stack-개요&#34;&gt;1. OP Stack 개요&lt;/h2&gt;
+&lt;p&gt;&lt;img alt=&#34;op-stack&#34; loading=&#34;lazy&#34; src=&#34;https://myuksal.github.io/assets/img/2025-09-17-OP-Stack/1.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Optimism 을 이야기 할 때 꼭 OP Stack 을 이야기한다.
+OP Stack 을 설치한 노드를 여러개 켜서 만든 체인이 Optimism 이다.
+반대로 말하여 OP Stack 의 genesis 블록 파일만 바꾸면 다른 체인으로 동작시킬 수 있다. 사실 이는 새롭지 않다. geth 로 새로운 체인을 만드는것과 같다.&lt;/p&gt;
+&lt;p&gt;OP Stack 을 개발하는 철학이 있다고 한다. 단순하게, 실용적이게(개발자 편의), 지속 가능하게, 낙관주의 라고한다.
+어떻게 하면 서버가 아프지 않을 수 있을까 를 고민하는 백엔드 개발자같아서 연민이 느껴졌다..&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
